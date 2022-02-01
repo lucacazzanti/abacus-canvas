@@ -9,19 +9,36 @@
 <meta property="og:title" content="Confidence Intervals for Gamma Distribution Parameters" />
 <meta name="author" content="Luca Cazzanti" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This is a test" />
-<meta property="og:description" content="This is a test" />
-<link rel="canonical" href="https://lucacazzanti.github.io/abacus-canvas/statistics/gamma/2016/05/29/EstimatingGammaParameters.html" />
-<meta property="og:url" content="https://lucacazzanti.github.io/abacus-canvas/statistics/gamma/2016/05/29/EstimatingGammaParameters.html" />
+<meta name="description" content="Estimating the confidence intervals of the paramters of the Gamma distribution from data." />
+<meta property="og:description" content="Estimating the confidence intervals of the paramters of the Gamma distribution from data." />
+<link rel="canonical" href="https://lucacazzanti.github.io/abacus-canvas/statistics/estimation/gamma/2016/05/29/EstimatingGammaParameters.html" />
+<meta property="og:url" content="https://lucacazzanti.github.io/abacus-canvas/statistics/estimation/gamma/2016/05/29/EstimatingGammaParameters.html" />
 <meta property="og:site_name" content="The Abacus and the Canvas" />
+<meta property="og:image" content="https://lucacazzanti.github.io/abacus-canvas/images/gamma.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2016-05-29T00:00:00-05:00" />
-<meta name="twitter:card" content="summary" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://lucacazzanti.github.io/abacus-canvas/images/gamma.png" />
 <meta property="twitter:title" content="Confidence Intervals for Gamma Distribution Parameters" />
 <script type="application/ld+json">
-{"url":"https://lucacazzanti.github.io/abacus-canvas/statistics/gamma/2016/05/29/EstimatingGammaParameters.html","@type":"BlogPosting","headline":"Confidence Intervals for Gamma Distribution Parameters","dateModified":"2016-05-29T00:00:00-05:00","datePublished":"2016-05-29T00:00:00-05:00","author":{"@type":"Person","name":"Luca Cazzanti"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://lucacazzanti.github.io/abacus-canvas/statistics/gamma/2016/05/29/EstimatingGammaParameters.html"},"description":"This is a test","@context":"https://schema.org"}</script>
+{"url":"https://lucacazzanti.github.io/abacus-canvas/statistics/estimation/gamma/2016/05/29/EstimatingGammaParameters.html","@type":"BlogPosting","image":"https://lucacazzanti.github.io/abacus-canvas/images/gamma.png","headline":"Confidence Intervals for Gamma Distribution Parameters","dateModified":"2016-05-29T00:00:00-05:00","datePublished":"2016-05-29T00:00:00-05:00","author":{"@type":"Person","name":"Luca Cazzanti"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://lucacazzanti.github.io/abacus-canvas/statistics/estimation/gamma/2016/05/29/EstimatingGammaParameters.html"},"description":"Estimating the confidence intervals of the paramters of the Gamma distribution from data.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/abacus-canvas/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://lucacazzanti.github.io/abacus-canvas/feed.xml" title="The Abacus and the Canvas" /><link rel="shortcut icon" type="image/x-icon" href="/abacus-canvas/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="/abacus-canvas/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://lucacazzanti.github.io/abacus-canvas/feed.xml" title="The Abacus and the Canvas" /><!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-4233318-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-4233318-1');
+</script>
+
+
+<link rel="shortcut icon" type="image/x-icon" href="/abacus-canvas/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css" integrity="sha512-h7nl+xz8wgDlNM4NqKEM4F1NkIRS17M9+uJwIGwuo8vGqIl4BhuCKdxjWEINm+xyrUjNCnK5dCrhM0sj+wTIXw==" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==" crossorigin="anonymous"></script>
@@ -82,7 +99,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/abacus-canvas/about/">About Me</a><a class="page-link" href="/abacus-canvas/search/">Search</a><a class="page-link" href="/abacus-canvas/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/abacus-canvas/about/">Luca Cazzanti, Ph.D. - data + science + leadership</a><a class="page-link" href="/abacus-canvas/search/">Search</a><a class="page-link" href="/abacus-canvas/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -90,7 +107,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Confidence Intervals for Gamma Distribution Parameters</h1><p class="page-description">This is a test</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2016-05-29T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Confidence Intervals for Gamma Distribution Parameters</h1><p class="page-description">Estimating the confidence intervals of the paramters of the Gamma distribution from data.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2016-05-29T00:00:00-05:00" itemprop="datePublished">
         May 29, 2016
       </time>• 
           <span itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -106,6 +123,9 @@ window.onload = wrap_img;
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
         <a class="category-tags-link" href="/abacus-canvas/categories/#statistics">statistics</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/abacus-canvas/categories/#estimation">estimation</a>
         &nbsp;
       
         <a class="category-tags-link" href="/abacus-canvas/categories/#gamma">gamma</a>
@@ -124,28 +144,20 @@ window.onload = wrap_img;
     </a>
 </div>
 
-          <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/lucacazzanti/abacus-canvas/master?filepath=_notebooks%2F2016-05-29-EstimatingGammaParameters.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/abacus-canvas/assets/badges/binder.svg" alt="Open In Binder"/>
-    </a>
-</div>
-
+          
           <div class="px-2">
     <a href="https://colab.research.google.com/github/lucacazzanti/abacus-canvas/blob/master/_notebooks/2016-05-29-EstimatingGammaParameters.ipynb" target="_blank">
         <img class="notebook-badge-image" src="/abacus-canvas/assets/badges/colab.svg" alt="Open In Colab"/>
     </a>
 </div>
-          <div class="px-2">
-  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Flucacazzanti%2Fabacus-canvas%2Fblob%2Fmaster%2F_notebooks%2F2016-05-29-EstimatingGammaParameters.ipynb" target="_blank">
-      <img class="notebook-badge-image" src="/abacus-canvas/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
-  </a>
-</div>
-
+          
         </div>
       </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Summary">Summary </a></li>
+<li class="toc-entry toc-h2"><a href="#The-Gamma-distribution:-the-basics">The Gamma distribution: the basics </a></li>
 <li class="toc-entry toc-h2"><a href="#Estimating-k-in-practice-and-confidence-intervals">Estimating k in practice and confidence intervals </a>
 <ul>
 <li class="toc-entry toc-h3"><a href="#MoM:-Method-of-moments">MoM: Method of moments </a></li>
@@ -181,22 +193,10 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>This notebook comes from  <a href="http://www.lucacazzanti.net/blog">The Abacus and The Canvas</a>. You may use it and modify it under the terms of the <a href="https://opensource.org/licenses">BSD license</a>.</em></p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><figure>
-  
-    <img class="docimage" src="/abacus-canvas/images/copied_from_nb/../images/gammas.png" alt="Gammas">
-    
-    
-</figure>
-
-I use visualization and bootstrap to obtain empirical confidence intervals for the estimates of the $k$ parameter of a Gamma distribution. I consider the dependency of the estimates on the sample size and on the true value of $k$, and the differences in the estimates computed with the method-of-moment (MoM) and maximum likelihood estimation (MLE). The results are in line with what we already know from statistics:</p>
+<h2 id="Summary">
+<a class="anchor" href="#Summary" aria-hidden="true"><span class="octicon octicon-link"></span></a>Summary<a class="anchor-link" href="#Summary"> </a>
+</h2>
+<p>I use visualization and bootstrap to obtain empirical confidence intervals for the estimates of the $k$ parameter of a Gamma distribution. I consider the dependency of the estimates on the sample size and on the true value of $k$, and the differences in the estimates computed with the method-of-moment (MoM) and maximum likelihood estimation (MLE). The results are in line with what we already know from statistics:</p>
 <ol>
 <li>The higher sample size, the higher the achievable confidence for a given tolerance on the $k$ estimates.</li>
 <li>MLE gives (slightly) more robust estimates than MoM across values of $k$ and across sample sizes.</li>
@@ -211,6 +211,9 @@ At the 95% confidence level, estimates for $k$ deviate from the true value by $\
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="The-Gamma-distribution:-the-basics">
+<a class="anchor" href="#The-Gamma-distribution:-the-basics" aria-hidden="true"><span class="octicon octicon-link"></span></a>The Gamma distribution: the basics<a class="anchor-link" href="#The-Gamma-distribution:-the-basics"> </a>
+</h2>
 <p>The Gamma distribution depends on two parameters, $k$ and $\theta$, and looks like this:</p>
 
 </div>
@@ -219,6 +222,9 @@ At the 95% confidence level, estimates for $k$ deviate from the true value by $\
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description" open="">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -229,8 +235,27 @@ At the 95% confidence level, estimates for $k$ deviate from the true value by $\
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">gamma</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
 
-<span class="k">def</span> <span class="nf">make_gammas</span><span class="p">(</span><span class="n">ks</span><span class="p">,</span> <span class="n">thetas</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+    </div>
+</div>
+</div>
+
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description" open="">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">make_gammas</span><span class="p">(</span><span class="n">ks</span><span class="p">,</span> <span class="n">thetas</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
     <span class="sd">"""</span>
 <span class="sd">    Make a dataframe of Gamma PDFs.</span>
 <span class="sd">    </span>
@@ -259,12 +284,16 @@ At the 95% confidence level, estimates for $k$ deviate from the true value by $\
 </div>
 </div>
 
+    </details>
 </div>
     
 
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description" open="">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -284,6 +313,7 @@ At the 95% confidence level, estimates for $k$ deviate from the true value by $\
 </div>
 </div>
 
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -325,6 +355,13 @@ $$\mu = k\theta, $$
 $$\sigma^2=k\theta^2.$$
 
 Thus, given the mean, we only need to estimate one parameter and then compute the other from the estimate. The <code>scipy.stats.gamma.fit()</code> implementation lets you choose which parameter to estimate and which one to constrain: I chose to estimate $k$ and derive $\theta$. Finally, since the Gamma pdf increasingly resembles a Gaussian for higher values of $k$, here I limit my exploration to $k\lt 10$. For higher values a Gaussian might be a better model, or one could shift the data <code>x</code> down (to the left) so that <code>min(x)=0</code> and assume lower values of $k$ for approximating the shifted pdf. Either way, I look only at $k\lt10$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Estimating-k-in-practice-and-confidence-intervals">
 <a class="anchor" href="#Estimating-k-in-practice-and-confidence-intervals" aria-hidden="true"><span class="octicon octicon-link"></span></a>Estimating k in practice and confidence intervals<a class="anchor-link" href="#Estimating-k-in-practice-and-confidence-intervals"> </a>
 </h2>
@@ -1037,7 +1074,14 @@ $$\theta = \frac{\sigma^2}{\mu}$$
 <p>Sampling introduces uncertainty in addition to the randomness of your chosen probability model. You should have an idea about this additional uncertainty, because it affects the predictions downstream of the estimation and therefore your key performance indicators (KPIs). In a typical data product (recommendation engine, personalized marketing offer, etc.), you have an overall error budget dictated by the allowed tolerances of your problem, and you allocate that error budget to the various steps in your data processing pipeline. For example, say your KPI is average revenue per user (ARPU) and you must estimate it within $\pm5%$, then all steps in your pipeline must guarantee that you will stay within that limit.</p>
 <p>It's true that big data give us the luxury of huge sample sizes, compressing the uncertainty down to <a href="http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/35179.pdf">unreasonably effective ranges</a>, and making sampling effects essentially insignificant. But even when you have big data sets available, you may need to partition it into many, disjoint subsets to run hundreds or thousands of independent experiments, each one requiring some sort of parameter estimation. This is the case of <em>mass personalization</em>, for example, in which finely targeted marketing offers are presented to smallish groups of customers. Determining the appropirate offer requires running many A/B tests, which means reserving target and control groups for each test. If each one requires 100 customers and you have 100 offers to test, then you need 10,000 customers set aside. If you are Google or Facebook that's peanuts, but if you are a startup you may not have that meny customers to experiment with. So, 
 You should strive to minimize the number of samples (in this case customers) needed for eaxh experiment, which means that you must know the additional uncertainty you introduce when you make your sample sizes smaller. This will help you  consider more carefully how the uncertainty propagates through the steps of your data analysis and how it affects your KPIs.</p>
-<p>Download the <a href="/blog/downloads/notebooks/EstimatingGammaParameters.ipynb">Jupyter Notebook</a> used to create this post.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Run and download the <a href="https://nbviewer.org/github/lucacazzanti/abacus-canvas/blob/master/_notebooks/2016-05-29-EstimatingGammaParameters.ipynb">Jupyter Notebook</a> used to create this post. You may use it and modify it under the terms of the <a href="https://opensource.org/licenses">BSD license</a>.</p>
 
 </div>
 </div>
@@ -1054,7 +1098,7 @@ You should strive to minimize the number of samples (in this case customers) nee
         theme="github-light"
         crossorigin="anonymous"
         async>
-</script><a class="u-url" href="/abacus-canvas/statistics/gamma/2016/05/29/EstimatingGammaParameters.html" hidden></a>
+</script><a class="u-url" href="/abacus-canvas/statistics/estimation/gamma/2016/05/29/EstimatingGammaParameters.html" hidden></a>
 </article>
 
       </div>
