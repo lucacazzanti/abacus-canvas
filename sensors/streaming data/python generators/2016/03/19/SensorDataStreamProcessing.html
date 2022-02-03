@@ -179,13 +179,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><figure>
-  
-    <img class="docimage" src="/abacus-canvas/images/copied_from_nb/my_icons/sensors_example.png" alt="Vessel data from two sensors.">
-    
-    
-</figure>
-A recurring task in multi-sensor data processing is merging -- or interleaving -- data from multiple sensors while maintaining chronological order.  For example, you may be combining temperature readings from different weather stations in a region, stringing together the locations of mobile devices recorded by different cell towers, or piecing together the routes taken by maritime vessels from the data they broadcast through the <a href="https://en.wikipedia.org/wiki/Automatic_Identification_System">Automatic Identification System (AIS)</a>.</p>
+<p>A recurring task in multi-sensor data processing is merging -- or interleaving -- data from multiple sensors while maintaining chronological order.  For example, you may be combining temperature readings from different weather stations in a region, stringing together the locations of mobile devices recorded by different cell towers, or piecing together the routes taken by maritime vessels from the data they broadcast through the <a href="https://en.wikipedia.org/wiki/Automatic_Identification_System">Automatic Identification System (AIS)</a>.</p>
 <p>Often, the volume of data recorded by each sensor is large compared to the available RAM; other times each sensor's data fits in memory, but the merged, sorted stream does not; yet other times the available RAM is insufficient even for smaller sensor data volumes because the merge-and-sort operation is carried out on a small, lightweight compute node (Raspberry Pi anyone?). For these reasons, maintaining order with the naive approach of concatenating-then-sorting-in-memory is infeasible. Fortunately, we can use Python generators, iterators, and priority queues from the Python package <a href="https://docs.python.org/2/library/heapq.html">heapq</a> to achieve ordered, merged data streams from multiple sensors with low memory overhead.</p>
 
 </div>
@@ -199,12 +193,19 @@ A recurring task in multi-sensor data processing is merging -- or interleaving -
 </h2>
 <p><figure>
   
-    <img class="docimage" src="/abacus-canvas/images/copied_from_nb/./my_icons/draft&lt;em&gt;marks.jpg" alt="Draft marks picture from Wikipedia">
+    <img class="docimage" src="/abacus-canvas/images/copied_from_nb/my_icons/draft_marks.jpg" alt="Draft marks picture from Wikipedia">
     
     
 </figure>
+</p>
 
-Vessels periodically broadcast their [draft](<a href="https://en.wikipedia.org/wiki/Draft">https://en.wikipedia.org/wiki/Draft</a>&lt;/em&gt;%28hull%29) -- the vertical distance between the waterline and the vessel's keel -- through the AIS protocol. Draft readings are used to ensure that loaded vessels to not run aground in shallower waters. Loading and unloading a vessel changes its draft, which can be used as an indicator of progress in port operations and as a proxy for maritime commerce. When multiple AIS data streams report the draft readings, we need to merge them into one unified stream to enable further vessel analytics, such as change detection.</p>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Vessels periodically broadcast their <a href="https://en.wikipedia.org/wiki/Draft_%28hull%29">draft</a> -- the vertical distance between the waterline and the vessel's keel -- through the AIS protocol. Draft readings are used to ensure that loaded vessels to not run aground in shallower waters. Loading and unloading a vessel changes its draft, which can be used as an indicator of progress in port operations and as a proxy for maritime commerce. When multiple AIS data streams report the draft readings, we need to merge them into one unified stream to enable further vessel analytics, such as change detection.</p>
 
 </div>
 </div>
