@@ -8,7 +8,7 @@ image: images/question_mark.png
 ---
 # Know your questions!
 
-<img style="float: left; height: 200px; margin-right: 7px" src= "{{baseurl}}/images/question_mark.png" alt="Question mark" title="Question mark">
+<img style="float: left; height: 200px; margin-right: 7px" src= "{{site.baseurl}}/images/question_mark.png" alt="Question mark" title="Question mark">
 
 Articulating precisely the question you are asking of the data gives clarity and focus to your data analysis.
 A complication is that often a data analysis flows through different stages in a non-linear way: you have some preliminary assumptions, you explore the data,
@@ -37,7 +37,7 @@ distribution, and types, and helps me form a first guess at the types of analyse
 I would say that every data analysis should go through a descriptive stage, even if its scope is limited. If you jump straight to inference or prediction without describing the data, you may not be able to interpret your results, or, horrors, may draw the wrong conclusion. So do yourself a favor: describe your data first. There are even built-in tools in Python:  [pandas.DataFrame.describe()](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.describe.html) and Dato's [graphlab.SFrame.show()](https://dato.com/products/create/docs/generated/graphlab.SFrame.show.html#graphlab.SFrame.show) are good places to start, or fire up Tableau. There are no excuses! 
 
 
-###Exploratory
+### Exploratory
 Think of exploratory data analysis as the idea-generation phase of a study. During this phase you formulate hypotheses about the relationships
 between subsets of the data. Perhaps you notice that shoppers tend to buy more hot dogs and beer on warm weekends; perhaps you notice an increased presence
 of pleasure boats during the summer on a given waterway; or maybe you observe that some of the 1000s of time series in your data set could be grouped  into a
@@ -51,12 +51,12 @@ not familiar with data analysis workflows. You are still at the rough draft stag
 preliminary hypotheses to be misconstrued as conclusions by an eager, but not data-savvy, manager.  
 
 
-###Inferential
+### Inferential
 Remember those hypotheses you generated during the exploratory phase? In an inferential analysis you seek to validate a
 hypothesis on a different data set, or infer that what you observed during the exploratory phase holds in general. Why would you want to do that? Well, think of polls and surveys. The available data are a subset collected from the overall population, but you are seeking to generalize what you learn from the sample to the entire population. Here's a made-up example. Say you discover that in your data set of 1000 adults, those who exercise at least 30 minutes a day enjoy a  10% decrease in the risk of heart disease. An inferential analysis would tell you if this result holds for the entire adult population, and typically it would also give you a 
 bound on the uncertainty around the result, which captures how robustly the result generalizes to the overall population. 
   
-###Predictive
+### Predictive
 Which customers are likely to churn out of a subscription over the next 60 days? Which offer is more likely to entice them to
 renew their subscriptions? How many cargo vessels will enter the port of Seattle in June 2018? These are examples of predictive
 questions, which arise in many fields and often underpin entire business models: data-driven startups live or die depending on
@@ -67,14 +67,14 @@ remember this: with inference, you are making statements about  averages, or oth
 with prediction, you are attempting to predict an individual outcome.
     
  
-###Causal
+### Causal
 In a causal analysis, you seek to test a cause-effect relationship between variables. Causation is a stronger relationship than
 correlation, which merely identifies a link between the variables. Often business problems are answered well enough by a
 predictive analysis, but  sometimes you may be interested in the causes of the relationship between variables, especially when
 you are attempting to interpret the results more deeply based on the subject matter (with the help of an expert). Just be mindful and
 do not confuse a successful predictive analysis, which builds on correlations between inputs and outputs, with a causal one.   
 
-###Mechanistic
+### Mechanistic
 A mechanistic question deals with the exact mechanisms involved in a phenomenon. For example, a chemical reaction can be explained
 exactly and mechanistically in terms of molecular bonds breaking and forming. Other examples are post-hoc
 reconstruction of events and root-cause analyses. It's difficult to answer mechanistic questions as part of a prediction or inference task
