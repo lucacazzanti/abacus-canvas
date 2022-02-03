@@ -1,14 +1,14 @@
 ---
 toc: true
 layout: post
-description: Recognizing the types of questions you are asking throughout a data analysis.
+description: Recognizing the types of questions you are asking throughout a data analysis project.
 categories: [data analysis]
 title: Know your questions!
 image: images/question_mark.png
 ---
 # Know your questions!
 
-<img style="float: left; height: 200px; margin-right: 7px" src= "images/question_mark.png" alt="Question mark" title="Question mark">
+<img style="float: left; height: 200px; margin-right: 7px" src= "{{baseurl}}/images/question_mark.png" alt="Question mark" title="Question mark">
 
 Articulating precisely the question you are asking of the data gives clarity and focus to your data analysis.
 A complication is that often a data analysis flows through different stages in a non-linear way: you have some preliminary assumptions, you explore the data,
