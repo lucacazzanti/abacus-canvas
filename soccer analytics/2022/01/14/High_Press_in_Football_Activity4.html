@@ -115,7 +115,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      17 min read
+      18 min read
     
 </span></p>
 
@@ -197,6 +197,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description" open="">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -212,12 +215,16 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 </div>
     
 
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description" open="">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -231,12 +238,16 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 </div>
     
 
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description" open="">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -250,12 +261,16 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 </div>
     
 
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description" open="">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -271,6 +286,7 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 </div>
     
 
@@ -314,6 +330,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description" open="">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -329,6 +348,7 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 </div>
     
 
@@ -745,6 +765,9 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description" open="">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
@@ -774,6 +797,7 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 </div>
     
 
@@ -1483,11 +1507,12 @@ Correlation between SoTA and percent of pressure in the attacking third: -0.6333
 <a class="anchor" href="#Discussion" aria-hidden="true"><span class="octicon octicon-link"></span></a>Discussion<a class="anchor-link" href="#Discussion"> </a>
 </h1>
 <p>I repeat here the summary from the introduction, and conclude with a paragraph on choosing the right metrics.</p>
-<p>While high-press is not required for teams to win games, there exist a correlation between winning (points) and using high-press. However it is not sufficient to simply apply pressure (proximity within 5 meters of an opponent) in quantity: the quality of the pressure is also important, as measured by the success rate of pressure events (winning possession). Furthermore, it is important to look at the normalized profile of pressure events across the thirds of the pitch for each team, becasue raw counts can be misleading.</p>
-<p>For the purposes of analysing a team's pressure style, metrics closer to the played game such as GA and SoTA are more relevant than points earned. For these metrics there is a stronger correlation with the success rate of pressure and the proportion of pressure applied in the attacking third.</p>
-<p>The statistics of Sheffield United (bottom-finisher) and Manchester City (EPL winner), are surprising at first if we only consider points won. Sheffield produced the highest number of pressures, both in total and in the attacking third, but finished last. Manchester City, conversely, had the fewest number of pressures, yet was the winner. The disinguishing characteristic for Man City is the highest success rate of the pressures and its stronger propensity toward the high-press.</p>
-<p>Success in pressure depends on many factors. It is not limited to the individual pressure event that leads to winning possession, but it also depends on the teammates covering the spaces or marking 1:1 marking correctly, applying their chosen pressure structures correctly, being ready on their jumps-to-pressure, and on any dynamic advantage of the individual players. Manchester City possesses more of these team and individual characteristics than Sheffield United and it is likely better able to choose the moments for applying pressure, increasing the efficiency of pressure activities. This, together with the fact that they practice a higher press, contributes to their low GA and SoTA metrics.</p>
-<p>Finally, it is important to distinguish overall win/lose-type of statistics, from more descriptive statistics. While a team's overall goal is to win, the goal of a tactical analyst is to understand their own team and the opponents: simple winning statistics are not as helpful here. Instead, choosing metrics more closely connected to the actions taken on the field, like GA and SoTA in this case, yields deeper undertanding and more fruitful exchange of ideas.</p>
+<p>In this activity I explore the relationship between team performance and team pressure behavior using data from the English Premiere League season 2020-2021. I focus on Manchester City and Sheffield United, respectively the winner and bottom finisher for that season. I describe how points, goals-against (GA) and shots-on-target-against (SoTA) are related to the success rate and the field location of teams' pressure acvitivies, and how these relationships explai the different final placements achieved by high-perfoming and low-performing teams. The analyzed metrics are related to passes-per-defensive action (<a href="https://www.statsperform.com/resource/how-we-measure-pressure/">PPDA</a>), a summary metric of a team's efficiency in applying defensive pressure, but in this note I do not look at this metric. Instead I focus on readily available, first-principles metrics that are nonetheless informative with only a minimum of data processing. While my observations are qualitative, they are supported by quantitative and exploratory analyses performed in Python.</p>
+<p>While high-press (applying defensive pressure in the opponent's third of the pitch) is not required for teams to win games, there exist a correlation between winning (points achieved) and using high-press. However, it is not sufficient to simply apply pressure (proximity within 5 meters of an opponent with the ball) in quantity in the attacking third: the quality of the pressure is also important, as measured by the success rate of pressure events (success is winning possession). Furthermore, it is important to also look at the normalized profiles of pressure events across the thirds of the pitch to characterize how a team chooses to distribute its totall pressure effort throughout a match in the three zones: raw counts, even segmented by pitch thirds, are misleading.</p>
+<p>For the purposes of analysing a team's pressure effectiveness, metrics closer to the played game such as GA and SoTA are more relevant than points earned. For these metrics there is a stronger correlation with the success rate of pressure and the proportion of pressure applied in the attacking third.</p>
+<p>The statistics of Sheffield United (bottom-finisher) and Manchester City (EPL winner), are surprising at first if we only consider points won. Sheffield produced the highest number of pressures, both in total and in the attacking third, but finished last. Manchester City, conversely, had the fewest number of pressures, yet was the winner. The distinguishing characteristic for Man City is the highest success rate of the pressures and its stronger propensity toward the high-press.</p>
+<p>Success in pressure depends on many factors. It is not limited to the individual pressure event that leads to winning possession, but it also depends on the teammates covering the spaces or marking 1:1 correctly, applying their chosen pressure structures correctly, being ready on their jumps-to-pressure, and on any dynamic advantage of the individual players. Manchester City possesses more of these team and individual characteristics than Sheffield United and it is likely better able to choose the moments for applying pressure, increasing the efficiency of pressure activities. This, together with the fact that they practice a higher press, contributes to their low GA and SoTA metrics.</p>
+<p>Finally, it is important to distinguish overall win/lose-type of statistics, from more descriptive statistics. While a team's overall objective is to win, the objective of a tactical/match analyst is to understand their own team and the opponents: simple winning statistics are not as helpful here. Instead, choosing metrics more closely connected to the actions taken on the field, like GA and SoTA in this case, yields deeper undertanding and more fruitful exchange of ideas.</p>
 
 </div>
 </div>
