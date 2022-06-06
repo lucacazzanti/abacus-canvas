@@ -26,7 +26,7 @@ questions and riff on them a bit with my own observations from my data analysis 
 ## The Six Types of Questions, according to Peng, Matsui, and Leek. 
 Peng, Matsui and Leek describe six types of questions for data analysis: 
 
-###Descriptive
+### Descriptive
 In a descriptive data analysis, all you do is describe the data. Typical outputs of these analyses are simple aggregations, like counts,
 percentages, bar charts, probability density estimates, quantiles, maximum, minimum, and missing values. You do not attempt to explain or interpret these
 summary statistics, or relate them to other sources of information. Dashboards are an example output of a descriptive data
