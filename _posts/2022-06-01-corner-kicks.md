@@ -219,14 +219,3 @@ TESTING 1
 
 TESTING 2
 [![Outswinging corner kick](img/outswinging_thumbnail.jpg)](https://youtu.be/pv9npd9JfLI)
-
-TESTING 3
-<iframe
-    width="640"
-    height="480"
-    src="https://youtu.be/pv9npd9JfLI"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen
->
-</iframe>
