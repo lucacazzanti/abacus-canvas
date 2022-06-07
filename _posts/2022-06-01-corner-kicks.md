@@ -215,12 +215,17 @@ Overload the near post to obtain an attempt or to attract the opponent and creat
 Runs to the near and far posts to drag/attracts opponents and create space in the penalty zone for strikers to head the ball from that zone\.
 
 TESTING 1
+<br>
 [![Outswinging corner kick](https://img.youtube.com/vi/pv9npd9JfLI/0.jpg)](https://youtu.be/pv9npd9JfLI)
 
+<br>
 TESTING 2
+<br>
 [![Outswinging corner kick]({{site.baseurl}}/images/outswinging_thumbnail.jpg)](https://youtu.be/pv9npd9JfLI target:_blank)
 
+<br>
 TESTING 3
+<br>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=pv9npd9JfLI" target="_blank">
- <img src="/images/outswinging_thumbnail.jpg" alt="Outswinging corner kick"/>
+ <img src="/abacus-canvas/images/outswinging_thumbnail.jpg" alt="Outswinging corner kick"/>
 </a>
