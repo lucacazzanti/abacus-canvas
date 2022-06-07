@@ -218,4 +218,4 @@ TESTING 1
 [![Outswinging corner kick](https://img.youtube.com/vi/pv9npd9JfLI/0.jpg)](https://youtu.be/pv9npd9JfLI)
 
 TESTING 2
-[![Outswinging corner kick](img/outswinging_thumbnail.jpg)](https://youtu.be/pv9npd9JfLI)
+[![Outswinging corner kick]({{site.baseurl}}/images/outswinging_thumbnail.jpg)](https://youtu.be/pv9npd9JfLI)
