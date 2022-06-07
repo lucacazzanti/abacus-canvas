@@ -222,5 +222,5 @@ TESTING 2
 
 TESTING 3
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=pv9npd9JfLI" target="_blank">
- <img src=/images/outswinging_thumbnail.jpg) alt="Outswinging corner kick"/>
+ <img src="/images/outswinging_thumbnail.jpg" alt="Outswinging corner kick"/>
 </a>
