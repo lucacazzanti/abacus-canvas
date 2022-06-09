@@ -60,7 +60,7 @@ Notwithstanding the need to adapt the report to the coaches, there are recurring
 
 
 # Case study - Attacking corner kicks by SB Eibar
-<img src="../images/sdeibar_logo.jpg" height=100px alt="SD Eibar logo"/>
+<img src="{{site.baseurl}}/images/sdeibar_logo.jpg" height=100px alt="SD Eibar logo"/>
 
 ## Initial structures
 * Line-up: 1-4 line structure at the start of the corner kick play
@@ -80,9 +80,9 @@ Notwithstanding the need to adapt the report to the coaches, there are recurring
 --->
 
 <table>
-<tr>
-<td><img src="../images/num_players_small_area.png" alt="Number of players in the small area" /></td>
-<td><img src="../images/num_players_total_area.png" alt="Total number of players in the area" /></td>
+<tr valign="top">
+<td><img src="/abacus-canvas//images/num_players_small_area.png" alt="Number of players in the small area" /></td>
+<td><img src="/abacus-canvas/images/num_players_total_area.png" alt="Total number of players in the area" /></td>
 </tr>
 </table>
 
@@ -92,13 +92,13 @@ Notwithstanding the need to adapt the report to the coaches, there are recurring
 * __Inswinging__ delivered to the __near post__
 * __Outswinging__ delivered to the __penalty zone__/__far post__ (penalty zone = central zone between the small area and the penalty spot)
 
-![Trajectory and delivery diagram](./img/trajectory_delivery.png)
-![Trajectory and delivery statistics](./img/trajectory_delivery_stats.png)
+<img src="/abacus-canvas/images/trajectory_delivery.png" alt="Trajectory and delivery diagram" />
+<img src="/abacus-canvas/images/trajectory_delivery_stats.png" alt="Trajectory and delivery statistics" />
 
 ## Habitual player functions: kickers, receivers, supporting
 ### Kickers
-* __\#14 \- Fabian Orellana \(winger\)__
-* __\#21 \- Pedro Leon \(winger\)__
+* __#14 - Fabian Orellana (winger)__
+* __#21 - Pedro Leon (winger)__
 * Only right-footed kickers
 * They kick from both sides
 
@@ -113,42 +113,43 @@ Notwithstanding the need to adapt the report to the coaches, there are recurring
 
 <table>
 <tr>
-<td><img src="/abacus-canvas/images/exteita.png" width="75" height="100" alt="Headshot Etxeita"/></td>
-<td><b># 5 - Xavi Etxeita</b>, center-back, 1.86 m, good with headers </td>
+<td><img src="/abacus-canvas/images/etxeita.png" width="75" height="100" alt="Headshot Etxeita"/></td>
+<td><b>#5 - Xavi Etxeita</b>, center-back, 1.86 m, good with headers </td>
 </tr>
 <tr>
 <td><img src="/abacus-canvas/images/enrich.png"  width="75" height="100" alt="Headshot Enrich"/></td>
-<td><b># 9 - Sergi Enrich</b>, center-forward, 1.83 m, good with headers, strong, good at maintaining position </td>
+<td><b>#9 - Sergi Enrich</b>, center-forward, 1.83 m, good with headers, strong, good at maintaining position </td>
 </tr>
 <tr>
 <td><img src="/abacus-canvas/images/garcia.png"  width="75" height="100" alt="Headshot Garcia"/></td>
-<td><b># 17 - Kike Garcia</b>, center-forward, 1.86 m, good with headers </td>
+<td><b>#17 - Kike Garcia</b>, center-forward, 1.86 m, good with headers </td>
 </tr>
 </table>
 
 ### Additional players in the area (drag, block) 
-* __\# 6 \- Sergio A\.__
-* __\# 8 \- P\. Diop__
-* __\# 12 \- P\. Oliveira__
+* __#6 - Sergio A.__
+* __#8 - P. Diop__
+* __#12 - P. Oliveira__
 
 ### Players at the top of the area (recover, shoot)
-* __\# 22 \- Inui__
-* __\# 16 \- de Blasis__
-* __\# 10 \- Exposito__
+* __# 22 - Inui__
+* __# 16 - de Blasis__
+* __# 10 - Exposito__
 
 
 ## Movements
 * __In general:__  players align immediately outside the small area in the penalty zone and rush in for an attempt or to drag the opponents to create space.
 * __On inswinging corners:__ ball to __near post__ for direct attempt or touch to second player in small area.  __Overloading near post__ to create attempt or create space for players in small area.
+<!--- 
 <br>
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=kMGulaVhlwI" target="_blank">
- <img src="/abacus-canvas/images/inswinging_thumbnail.jpg" alt="Click for video of inswinging corner kick"/>
+--->
+<p align="center">
+ <img src="/abacus-canvas/images/inswinging_thumbnail.jpg" alt="Inswinging corner kick attacking structure"/>
 </a>
 <br>
-THIS IS A TEST
-<br>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kMGulaVhlwI" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe width="750" height="350" src="https://www.youtube.com/embed/kMGulaVhlwI" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
 * __On outswinging corners:__ direct ball to far post/penalty zone;  __fake movements__ to the near post to create space at far post.
 <!--- 
 TESTING 1
