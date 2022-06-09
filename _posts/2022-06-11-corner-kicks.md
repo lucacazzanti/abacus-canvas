@@ -60,7 +60,7 @@ Notwithstanding the need to adapt the report to the coaches, there are recurring
 
 
 # Case study - Attacking corner kicks by SB Eibar
-<img src="/abacus-canvas/images/sdeibar_logo.png" height=100px alt="SD Eibar logo"/> For this section I adapted the information in my original PowerPoint report to this blog format. See the last section for access to the original report.
+<img src="../images/sdeibar_logo.jpg" height=100px alt="SD Eibar logo"/>
 
 ## Initial structures
 * Line-up: 1-4 line structure at the start of the corner kick play
@@ -70,13 +70,21 @@ Notwithstanding the need to adapt the report to the coaches, there are recurring
 <img src="/abacus-canvas/images/starting_structure_snapshot.png" alt="Structure snapshot" /><br>
 <img src="/abacus-canvas/images/starting_structure_diagram.png" alt="Structure diagram" />
 
+<!--- 
 ![Structure snapshot](./img/starting_structure_snapshot.png)
 ![Structure diagram]({{site.baseurl}}/images/starting_structure_diagram.png)
 
 | Number of players| |
 |-----|-----|
 | ![Players in small area](img/corner_kicks6.png) | ![Players in area](img/corner_kicks7.png) |
+--->
 
+<table>
+<tr>
+<td><img src="../images/num_players_small_area.png" alt="Number of players in the small area" /></td>
+<td><img src="../images/num_players_total_area.png" alt="Total number of players in the area" /></td>
+</tr>
+</table>
 
 ## Ball trajectory and delivery location
 * Mostly direct kicks with in/out swinging trajectories: short passes and flat delivery used infrequently
@@ -95,23 +103,25 @@ Notwithstanding the need to adapt the report to the coaches, there are recurring
 * They kick from both sides
 
 ### Receivers
+<!--- 
 | Receivers| |
 | --- | --- |
 | ![](img/etxeita.png) |  __\# 5 \- Xavi Etxeita__ , center\-back\, 1\.86 m\, good with headers |
 | ![](img/enrich.png) |__\# 9 \- Sergi Enrich__ \, center\-forward\, 1\.83m\, good with headers\, strong\, good at maintaining position |
 | ![](img/garcia.png) | __\#17 \- Kike Garcia__ \, center\-forward\, 1\,86 m\, good with headers |
+--->
 
 <table>
 <tr>
-<td><img src="/abacus-canvas/images/exteita.jpg" width="75" height="100" alt="Headshot Etxeita"/></td>
+<td><img src="/abacus-canvas/images/exteita.png" width="75" height="100" alt="Headshot Etxeita"/></td>
 <td><b># 5 - Xavi Etxeita</b>, center-back, 1.86 m, good with headers </td>
 </tr>
 <tr>
-<td><img src="/abacus-canvas/images/enrich.jpg"  width="75" height="100" alt="Headshot Enrich"/></td>
+<td><img src="/abacus-canvas/images/enrich.png"  width="75" height="100" alt="Headshot Enrich"/></td>
 <td><b># 9 - Sergi Enrich</b>, center-forward, 1.83 m, good with headers, strong, good at maintaining position </td>
 </tr>
 <tr>
-<td><img src="/abacus-canvas/images/garcia.jpg"  width="75" height="100" alt="Headshot Garcia"/></td>
+<td><img src="/abacus-canvas/images/garcia.png"  width="75" height="100" alt="Headshot Garcia"/></td>
 <td><b># 17 - Kike Garcia</b>, center-forward, 1.86 m, good with headers </td>
 </tr>
 </table>
