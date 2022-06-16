@@ -170,8 +170,15 @@ Glossary:
 * Clearance: the defense clears the ball away
 
 # Method and Tools
-TO-DO
+[FC Barcelona's Innovation Hub](https://https://barcainnovationhub.com/) course on Set Piece Analysis, which is a requirement for their Certificate in Advanced Football Tactical Analysis provided a vido clip of 37 attacking corner kicks by SD Eibar. I tagged all the corner kicks with the [DartFish Pro S](https://www.dartfish.com/) sports performance analysis software. I designed my own tagging panel for this activity
 
-Google drive share: https://drive.google.com/drive/folders/1ZJBmPQ0b1JrL6-WgE0AGHJhG6XeouK7g?usp=sharing
+<img src="/abacus-canvas/images/dartfish_attacking_corner_kicks_tagging_panel.png" alt="DartFish attacking corner kicks tagging panel"/>
 
+After tagging all corner kicks, I used DartFish to tabulate the summary counts of corner kick types and to create the graphics effects for the selected clips. I searched for additional information on specific players that I did not have from the clips (names, positions) on Tranfermarkt. I then put everything together in a PowerPoint presentation. The target audience of the presentation (except for the title slide) was the coaching staff of SD EIbar's next opponent (presumably Barcelona).
+
+In [this Google Drive Share](https://drive.google.com/drive/folders/1ZJBmPQ0b1JrL6-WgE0AGHJhG6XeouK7g?usp=sharing) you will find the original video clip, the selected corner kisks with graphics, the PowerPopint presentation, and the tagging panel that you can load in DartFish to tag your own attacking corner kicks. If you use any of these materials for your own work, ans especially the tagging panel, I'd appreciate an acknowledgment with a link to [my website](https://www.lucacazzanti.net). You may use any of these materials for your personal use, except that if you are taking the same course from FC Barcelona's Innovation Hub you may not, under any circumstances, use any of the materials as part of the assignment that you turn in.
+
+__Acknowledgements__<br>
+I want to thank [Lorenzo Favaro](https://www.linkedin.com/in/lorenzofavaro/), 
+[Marco Giustini](https://www.linkedin.com/in/marco-giustini-a30543106/) and the rest of the instructors at [SportAnalisi](https://www.sportanalisi.it/) for making DartFish available, for their guidance in its use and for the invaluable lessons in match analysis and football tactics (grazie ragazzi!).
 
