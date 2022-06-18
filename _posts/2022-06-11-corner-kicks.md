@@ -1,6 +1,7 @@
 ---
 toc: true
 layout: post
+comments: true
 description: A case study of attacking corner kicks by Spanish club SD Eibar.
 categories: [set piece analysis, corner kicks, opponent report, pre-match report, soccer analytics, DartFish]
 title: Attacking corner kicks - A case study  
